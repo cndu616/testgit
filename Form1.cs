@@ -22,11 +22,11 @@ namespace _7_闹钟
         {
             //闹钟时间
             timeForTick = new DateTime(2020, 7, 23, 9, 10, 0);
-            label1.Text = string.Format("闹钟时间：{0}", timeForTick.ToString());
+            label1.Text = string.Format("打开闹钟的时间是：{0}", timeForTick.ToString());
             //设置定时打开的对象
             musicPlayer.settings.autoStart = false;
             musicPlayer.URL = @"C:\CloudMusic\Candy - Bila.mp3";
-
+            ;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
